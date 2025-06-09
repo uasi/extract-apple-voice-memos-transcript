@@ -86,10 +86,17 @@ def process_m4a_file(filename, mode):
             return
 
         printed = False
-        for item in json_obj.get("attributedString", []):
-            if isinstance(item, str):
-                print(item, end="")
-                printed = True
+        attributedString = json_obj.get("attributedString")
+        if isinstance(attributedString, list):
+            for item in attributedString:
+                if isinstance(item, str):
+                    print(item, end="")
+                    printed = True
+        elif isinstance(attributedString, dict):
+            for item in attributedString.get("runs", []):
+                if isinstance(item, str):
+                    print(item, end="")
+                    printed = True
         if printed:
             print()
 
