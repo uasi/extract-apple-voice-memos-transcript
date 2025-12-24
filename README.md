@@ -31,9 +31,9 @@ There are two formats: in one, text and attributes are interleaved; in the other
   "attributedString": [
     "This is",
     { "timeRange": [0, 0.42] },
-    "the transcript text",
+    " the transcript text",
     { "timeRange": [0.42, 1.23] },
-    "interleaved with attributes.",
+    " interleaved with attributes.",
     { "timeRange": [1.23, 2.00] }
   ],
   "locale": { "identifier": "en_US", "current": 0 }
@@ -51,9 +51,9 @@ There are two formats: in one, text and attributes are interleaved; in the other
     "runs": [
       "In this format",
       0,
-      "text is interleaved with",
+      " text is interleaved with",
       1,
-      "indices of attributes",
+      " indices of attributes.",
       2
     ]
   },
