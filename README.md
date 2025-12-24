@@ -63,7 +63,7 @@ There are two formats: in one, text and attributes are interleaved; in the other
 
 ## Transcript data format
 
-Apple Voice Memos stores transcripts in `.m4a` files using the `tsrp` atom (box), which appears to be an Apple-proprietary extension. The atom hierarchy is:
+Apple Voice Memos stores transcripts in `.m4a` files using the `tsrp` atom[^atom], which appears to be an Apple-proprietary extension. The atom hierarchy is:
 
 ```
 moov
@@ -73,3 +73,5 @@ moov
 ```
 
 The `tsrp` atom contains UTF-8 encoded JSON data. See the example output above for the structure.
+
+[^atom]: [Atoms | Apple Developer Documentation](https://developer.apple.com/documentation/quicktime-file-format/atoms)
