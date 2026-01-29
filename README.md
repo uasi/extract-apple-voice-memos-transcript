@@ -24,7 +24,8 @@ Voice Memos recordings are stored at `~/Library/Group Containers/group.com.apple
 
 Examples below are formatted for readability. Actual output is compact (no whitespace or newlines).
 
-There are two formats: in one, text and attributes are interleaved; in the other, they are separated.
+Apparently there are two formats: in one, text and attributes are interleaved; in the other, they are separated. The conditions under which each format is used are unknown. Even with the same version of Voice Memos, recordings may be saved in different formats.
+
 
 ```json
 {
